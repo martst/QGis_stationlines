@@ -1,0 +1,30 @@
+[general]
+name=Station Lines
+qgisMinimumVersion=2.99
+qgisMaximumVersion=3.98
+description=Create lines along polylines with some parameters (length, side, angle). It assumes a cartesian coordinate system 
+version=0.2.0
+author=Martin Stubbs
+email=martinstubbs@gmail.com
+
+# end of mandatory metadata
+
+# Optional items:
+
+# Uncomment the following line and add your changelog entries:
+changelog=
+    0.2.0 make changes for QGIS 3.0
+
+# tags are comma separated with spaces allowed
+tags=vector
+
+homepage=http://hub.qgis.org/projects/stationlines/
+tracker=http://hub.qgis.org/projects/stationlines/issues
+repository=https://github.com/lbartoletti/stationlines
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version
+deprecated=False
+

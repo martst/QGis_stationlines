@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Station Lines &mdash; Station Lines 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Station Lines 0.1 documentation" href="#" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="#">
+          <span>Station Lines 0.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Station Lines</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="station-lines">
+<h1>Station Lines<a class="headerlink" href="#station-lines" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="concepts">
+<span id="index-0"></span><h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
+<p>The plugin creates station lines with some parameters</p>
+</div>
+<div class="section" id="stations-choices">
+<h1>Stations choices<a class="headerlink" href="#stations-choices" title="Permalink to this headline">¶</a></h1>
+<p>Stations can be at vertices and/or at equally spaced distance.</p>
+<p>If both are checked, stations are ordered along the path of the polyline.</p>
+<div class="section" id="distance">
+<h2>Distance<a class="headerlink" href="#distance" title="Permalink to this headline">¶</a></h2>
+<p>Input :</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field:</th><td class="field-body">Field with a numerical value (Int or Float)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Value:</th><td class="field-body">A fixed numercial value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="side">
+<h1>Side<a class="headerlink" href="#side" title="Permalink to this headline">¶</a></h1>
+<p>Side is:</p>
+<ul class="simple">
+<li>Left: station lines are on left side</li>
+</ul>
+<a class="reference internal image-reference" href="_images/side_left.png"><img alt="_images/side_left.png" src="_images/side_left.png" style="width: 679.0px; height: 147.5px;" /></a>
+<ul class="simple">
+<li>Right: station lines are on right side</li>
+</ul>
+<a class="reference internal image-reference" href="_images/side_right.png"><img alt="_images/side_right.png" src="_images/side_right.png" style="width: 679.0px; height: 147.5px;" /></a>
+<ul class="simple">
+<li>Both: station lines are on left and right side</li>
+</ul>
+<p>Input:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field:</th><td class="field-body">String value with:</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>0 = Right</li>
+<li>1 = Left</li>
+<li>2 = Both</li>
+<li>Right (and all variants: RIGHT, RigHt, ...)</li>
+<li>Left (and all variants: LEFT, LEfT, ...)</li>
+<li>Both (and all variants: BOTH, BotH, ...)</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Value:</th><td class="field-body">A fixed string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="length">
+<h1>Length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h1>
+<p>A negative value provide the opposite side. For example, Right side with a negative value is like Left side with a positive value.</p>
+<p>Input:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field:</th><td class="field-body">Field with a numerical value (Int or Float)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Value:</th><td class="field-body">A fixed numercial value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="angle">
+<h1>Angle<a class="headerlink" href="#angle" title="Permalink to this headline">¶</a></h1>
+<p>Angles are in degree and are normalized.</p>
+<p>Examples by side (Red line is a polyline):</p>
+<div class="section" id="right">
+<h2>Right<a class="headerlink" href="#right" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/right.png"><img alt="_images/right.png" src="_images/right.png" style="width: 271.6px; height: 271.6px;" /></a>
+</div>
+<div class="section" id="left">
+<h2>Left<a class="headerlink" href="#left" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/left.png"><img alt="_images/left.png" src="_images/left.png" style="width: 271.6px; height: 271.6px;" /></a>
+</div>
+<div class="section" id="both">
+<h2>Both<a class="headerlink" href="#both" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/both_0-180.png"><img alt="_images/both_0-180.png" src="_images/both_0-180.png" style="width: 271.6px; height: 271.6px;" /></a>
+<a class="reference internal image-reference" href="_images/both_180-360.png"><img alt="_images/both_180-360.png" src="_images/both_180-360.png" style="width: 271.6px; height: 271.6px;" /></a>
+<p>Input:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field:</th><td class="field-body">Field with a numerical value (Int or Float. Can be negative)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Value:</th><td class="field-body">A fixed numercial value between 0 and 360</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="output">
+<h1>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h1>
+<p>Station lines are created on a single layer with these attributes:</p>
+<ul class="simple">
+<li>FID: ID of the original linestring</li>
+<li>SL_ID: ID of the station lines. Each SL have a unique ID</li>
+<li>SL_SEGMENT: ID of the segment of the linestring</li>
+<li>SL_ANGLE: Angle of the SL</li>
+<li>SL_LENGTH: Length of the SL</li>
+<li>SL_ORIENT: Orientation/Side of the SL</li>
+</ul>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Loïc BARTOLETTI.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
